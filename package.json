@@ -1,0 +1,3 @@
+"scripts": {
+    "install": "( [ ! -f ./ThisIsNpmPackage ] && [ ! -f ./AlreadyInstalled ] && echo \"\" > ./AlreadyInstalled && npm install . && node ./build.js ) || echo \"SKIP: NON GIT SOURCE\""
+}
